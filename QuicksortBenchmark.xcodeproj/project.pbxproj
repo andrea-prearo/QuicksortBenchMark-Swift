@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AF0791F31D1F0C6000C63241 /* SortingAlgorithmWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0791F21D1F0C6000C63241 /* SortingAlgorithmWrapper.swift */; };
-		AF36AF0F1D1F1BF700EE8A75 /* Array+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36AF0D1D1F1BF700EE8A75 /* Array+Helpers.swift */; };
+		AF36AF0F1D1F1BF700EE8A75 /* Array+Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36AF0D1D1F1BF700EE8A75 /* Array+Split.swift */; };
 		AF36AF101D1F1BF700EE8A75 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36AF0E1D1F1BF700EE8A75 /* Sorting.swift */; };
 		AF3FB16B1D133B0F00C693F9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3FB16A1D133B0F00C693F9 /* main.swift */; };
+		AF7AE7A21D42A5F0003A77FF /* CollectionType+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7AE7A11D42A5F0003A77FF /* CollectionType+Shuffle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,10 +28,11 @@
 
 /* Begin PBXFileReference section */
 		AF0791F21D1F0C6000C63241 /* SortingAlgorithmWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortingAlgorithmWrapper.swift; sourceTree = "<group>"; };
-		AF36AF0D1D1F1BF700EE8A75 /* Array+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Helpers.swift"; sourceTree = "<group>"; };
+		AF36AF0D1D1F1BF700EE8A75 /* Array+Split.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Split.swift"; sourceTree = "<group>"; };
 		AF36AF0E1D1F1BF700EE8A75 /* Sorting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
-		AF3FB1671D133B0F00C693F9 /* QuicksortComparison */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = QuicksortComparison; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF3FB1671D133B0F00C693F9 /* QuicksortBenchmark */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = QuicksortBenchmark; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF3FB16A1D133B0F00C693F9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AF7AE7A11D42A5F0003A77FF /* CollectionType+Shuffle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionType+Shuffle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +49,7 @@
 		AF3FB15E1D133B0F00C693F9 = {
 			isa = PBXGroup;
 			children = (
-				AF3FB1691D133B0F00C693F9 /* QuicksortComparison */,
+				AF3FB1691D133B0F00C693F9 /* QuicksortBenchmark */,
 				AF3FB1681D133B0F00C693F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,28 +57,29 @@
 		AF3FB1681D133B0F00C693F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AF3FB1671D133B0F00C693F9 /* QuicksortComparison */,
+				AF3FB1671D133B0F00C693F9 /* QuicksortBenchmark */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AF3FB1691D133B0F00C693F9 /* QuicksortComparison */ = {
+		AF3FB1691D133B0F00C693F9 /* QuicksortBenchmark */ = {
 			isa = PBXGroup;
 			children = (
 				AF3FB16A1D133B0F00C693F9 /* main.swift */,
 				AF36AF0E1D1F1BF700EE8A75 /* Sorting.swift */,
-				AF36AF0D1D1F1BF700EE8A75 /* Array+Helpers.swift */,
+				AF36AF0D1D1F1BF700EE8A75 /* Array+Split.swift */,
+				AF7AE7A11D42A5F0003A77FF /* CollectionType+Shuffle.swift */,
 				AF0791F21D1F0C6000C63241 /* SortingAlgorithmWrapper.swift */,
 			);
-			path = QuicksortComparison;
+			path = QuicksortBenchmark;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AF3FB1661D133B0F00C693F9 /* QuicksortComparison */ = {
+		AF3FB1661D133B0F00C693F9 /* QuicksortBenchmark */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF3FB16E1D133B0F00C693F9 /* Build configuration list for PBXNativeTarget "QuicksortComparison" */;
+			buildConfigurationList = AF3FB16E1D133B0F00C693F9 /* Build configuration list for PBXNativeTarget "QuicksortBenchmark" */;
 			buildPhases = (
 				AF3FB1631D133B0F00C693F9 /* Sources */,
 				AF3FB1641D133B0F00C693F9 /* Frameworks */,
@@ -86,9 +89,9 @@
 			);
 			dependencies = (
 			);
-			name = QuicksortComparison;
-			productName = QuicksortComparison;
-			productReference = AF3FB1671D133B0F00C693F9 /* QuicksortComparison */;
+			name = QuicksortBenchmark;
+			productName = QuicksortBenchmark;
+			productReference = AF3FB1671D133B0F00C693F9 /* QuicksortBenchmark */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +109,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AF3FB1621D133B0F00C693F9 /* Build configuration list for PBXProject "QuicksortComparison" */;
+			buildConfigurationList = AF3FB1621D133B0F00C693F9 /* Build configuration list for PBXProject "QuicksortBenchmark" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -118,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AF3FB1661D133B0F00C693F9 /* QuicksortComparison */,
+				AF3FB1661D133B0F00C693F9 /* QuicksortBenchmark */,
 			);
 		};
 /* End PBXProject section */
@@ -129,8 +132,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF3FB16B1D133B0F00C693F9 /* main.swift in Sources */,
-				AF36AF0F1D1F1BF700EE8A75 /* Array+Helpers.swift in Sources */,
+				AF36AF0F1D1F1BF700EE8A75 /* Array+Split.swift in Sources */,
 				AF36AF101D1F1BF700EE8A75 /* Sorting.swift in Sources */,
+				AF7AE7A21D42A5F0003A77FF /* CollectionType+Shuffle.swift in Sources */,
 				AF0791F31D1F0C6000C63241 /* SortingAlgorithmWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,7 +241,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AF3FB1621D133B0F00C693F9 /* Build configuration list for PBXProject "QuicksortComparison" */ = {
+		AF3FB1621D133B0F00C693F9 /* Build configuration list for PBXProject "QuicksortBenchmark" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF3FB16C1D133B0F00C693F9 /* Debug */,
@@ -246,7 +250,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF3FB16E1D133B0F00C693F9 /* Build configuration list for PBXNativeTarget "QuicksortComparison" */ = {
+		AF3FB16E1D133B0F00C693F9 /* Build configuration list for PBXNativeTarget "QuicksortBenchmark" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF3FB16F1D133B0F00C693F9 /* Debug */,
